@@ -9,8 +9,8 @@ import {environment} from "../../../environments/environment";
 })
 export class IndexComponent implements OnInit {
   data = {
-    name: 'About',
-    bio: 'Former baseball player',
+    name: 'Angular SSR Template',
+    bio: 'This is a template repo for creating Angular SR project.',
     image: 'avatar.png'
   };
   protected readonly environment = environment;
@@ -21,7 +21,7 @@ export class IndexComponent implements OnInit {
   ngOnInit() {
     this.title.setTitle(this.data.name);
     this.meta.addTags([
-      {name: 'twitter:card', content: 'summary'},
+      {name: 'twitter:card', content: this.data.name},
       {name: 'og:url', content: '/index'},
       {name: 'og:title', content: this.data.name},
       {name: 'og:description', content: this.data.bio},

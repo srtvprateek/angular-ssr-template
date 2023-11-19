@@ -8,8 +8,8 @@ import {Meta, Title} from "@angular/platform-browser";
 })
 export class AboutComponent implements OnInit {
   data = {
-    name: 'Michael Jordan',
-    bio: 'Former baseball player',
+    name: 'About',
+    bio: 'About page',
     image: 'avatar.png'
   };
 
@@ -19,7 +19,7 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
     this.title.setTitle(this.data.name);
     this.meta.addTags([
-      {name: 'twitter:card', content: 'about'},
+      {name: 'twitter:card', content: this.data.name},
       {name: 'og:url', content: '/about'},
       {name: 'og:title', content: this.data.name},
       {name: 'og:description', content: this.data.bio},
