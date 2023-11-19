@@ -1,0 +1,26 @@
+# compiled output
+/dist
+/tmp
+
+# dependencies
+/node_modules
+package-lock.json
+
+# IDEs and editors
+/.idea
+/.angular
+/.vscode
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# firebase
+firebase-debug.log
+/.firebase
+
+# functions
+/functions/node_modules
+/functions/dist
+/functions/firebase-debug.log
+/functions/package-lock.json

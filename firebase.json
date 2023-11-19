@@ -1,0 +1,18 @@
+{
+  "hosting": {
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "websiteSSR"
+      }
+    ]
+  },
+  "functions": {
+    "source": "functions"
+  }
+}
